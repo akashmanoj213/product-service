@@ -1,6 +1,6 @@
 export class ProductRecommendationDto {
     type?: string;
-    dob?: Date;
+    age?: number;
     gender?: string;
     sumInsured?: number;
     selectedProductId?: number;
