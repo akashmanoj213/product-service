@@ -205,8 +205,9 @@ export class ProductService {
 
 
     if (selectedProductId) {
-      const product = products.find(product => product.id === selectedProductId) || [];
-      return product;
+      const product = products.find(product => product.id === selectedProductId);
+      
+      return product ? [product] : [];
     }
 
     return products;
